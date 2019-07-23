@@ -1,0 +1,33 @@
+@import url('reset.css');
+
+@import url('typography.css');
+
+@import url('layout.css');
+
+body {
+    /* background: #F00; */
+}
+
+.site {
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.site-header {
+    display: flex;
+    align-items: center;
+}
+
+.site-header nav {
+    margin-left: auto;
+}
+
+.site-header nav ul {
+    display: flex;
+}
+
+.site-header li {
+    margin: 0 0.5rem;
+    display: block;
+}
