@@ -4,21 +4,44 @@
 
 @import url('layout.css');
 
+@import url('variables.css');
+
 
 
 .site {
-    max-width: 50rem;
-    margin: 0 auto;
-    padding: 2rem;
+    width: 100vw;
 }
+
+/* header */
 
 .site-header {
     display: flex;
-    align-items: center;
+    /* position: fixed;
+    top: 0; */
+    width: 100%;
+    /* z-index: 100; */
+    background: var(--color-header-footer);
+    justify-content: space-between;
+    padding: 0 2em;
+    border-bottom: var(--color-header-footer-border);
+
+}
+
+.site-header a {
+    display: block;
+    color: #FFF;
+    text-decoration: none;
+}
+
+.site-header .site-title {
+    font-size: 2rem;
+    padding: 0.5em 0;
+    font-weight: 700;
+    color: #FFF;
 }
 
 .site-header nav {
-    margin-left: auto;
+    display: flex;
 }
 
 .site-header nav ul {
@@ -26,6 +49,27 @@
 }
 
 .site-header li {
-    margin: 0 0.5rem;
-    display: block;
+    display: flex;
+    margin: 0 0.7rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.site-header nav a{
+    display: flex;
+    align-items: center;
+    padding: 0 0.3rem;
+    position: relative;
+}
+
+.site-header a:hover {
+    text-shadow: 0px 8px 12px rgb(0, 0, 0);
+}
+
+/* footer */
+
+.site-footer {
+    background: var(--color-header-footer);
+    border-top: var(--color-header-footer-border);
+    padding: 1em auto;
 }
