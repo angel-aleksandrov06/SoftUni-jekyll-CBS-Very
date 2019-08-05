@@ -14,20 +14,10 @@
         <header class="site-header">
             
             <h1 class="site-title">
-                <a href="{{ site.baseurl }}">{{site.title}}</a>
+                <a href="{{ site.baseurl }}/">{{site.title}}</a>
             </h1>
 
-            <nav class="site-nav">
-                <ul>
-                    {% for page in site.pages %}
-                        {% if page.title %}
-                        <li>
-                            <a href="{{ site.baseurl }}/{{ page.url }}">{{ page.title }}</a>
-                        </li>
-                        {% endif %}
-                    {% endfor %}
-                </ul>
-            </nav>
+            {% include navigation.html %}
 
         </header>
 
@@ -42,7 +32,15 @@
         </main>
 
         <footer class="site-footer">
-            <p>All rights reserved &copy; {{site.title}}</p>
+            <div class="footer-container">
+                <section class="follow-us"></section>
+                <section class="site-map">
+                    <span>LINKS</span>
+                    {% include navigation.html %}
+                </section>
+                <section class="contacs"></section>
+            </div>
+            <p>All rights reserved. &copy; 2019 {{site.title}} | Disign by Angel Aleksandrov</p>
         </footer>
 
     </div>

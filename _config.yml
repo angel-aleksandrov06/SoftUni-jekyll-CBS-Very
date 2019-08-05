@@ -17,8 +17,8 @@ title: CBS-Very
 email: CBS-Very@gmail.com
 description: I am on Hollyday!
 destination: docs
-# baseurl: "" # the subpath of your site, e.g. /blog
-baseurl: "/SoftUni-jekyll-CBS-Very" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
+# baseurl: "/SoftUni-jekyll-CBS-Very" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: CBS-Very
 github_username: CBS-Very

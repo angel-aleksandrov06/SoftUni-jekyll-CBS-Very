@@ -1,4 +1,6 @@
 :root {
     --color-header-footer: rgb(152, 121, 172);
     --color-header-footer-border: 2px solid  rgb(76, 26, 109);
+
+    --text-shadow: 0px 8px 12px rgb(0, 0, 0);
 }
