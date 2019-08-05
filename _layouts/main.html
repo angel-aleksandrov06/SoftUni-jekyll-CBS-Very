@@ -41,13 +41,20 @@
 
         <footer class="site-footer">
             <div class="footer-container">
-                <section class="follow-us"></section>
+                <section class="follow-us">
+
+                </section>
                 <section class="site-map">
                     <span>LINKS</span>
                     {% include navigation.html location="footer" %}
                 </section>
-                <section class="contacs">
-
+                <section class="footer-contacts">
+                    <span>CONTACTS</span>
+                    <ul class="footer-contacts-ul">
+                        <li><i class="fas fa-phone-square"></i>+49 176 192 3511</li>
+                        <li><i class="fas fa-envelope-open-text"></i>{{ site.email }}</li>
+                        <li><i class="fas fa-map-marker-alt"></i>{{ site.addres }}</li>
+                    </ul>
                 </section>
             </div>
             <p>All rights reserved. &copy; 2019 {{site.title}} | Disign by Angel Aleksandrov</p>

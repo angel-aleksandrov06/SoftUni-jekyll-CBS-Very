@@ -46,3 +46,33 @@
 .site-header a:hover {
     text-shadow: var(--text-shadow);
 }
+
+@media (max-width: 600px){
+    .site-header .site-title {
+        min-width: 5rem;
+        display: block
+    }
+
+    .site-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .site-header .site-nav-header ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .site-header li {
+        flex: 1 0 20%;
+        display: block;
+        text-align: center;
+        padding: 0.4rem 0;
+    }
+
+    .site-header .site-nav-header a {
+        display: block;
+    }
+}
