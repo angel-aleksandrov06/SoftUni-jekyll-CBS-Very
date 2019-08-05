@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{site.title}}</title>
     <link rel="stylesheet" href="{{ site.baseurl }}/css/site.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/fontawesome/">
 </head>
 <body>
 
@@ -13,9 +14,16 @@
 
         <header class="site-header">
             
+            {% if page.home == true %}
             <h1 class="site-title">
-                <a href="{{ site.baseurl }}/">{{site.title}}</a>
+                <a href="{{ site.baseurl }}">{{site.title}}</a>
             </h1>
+            {% else %}
+
+            <p class="site-title">
+                <a href="{{ site.baseurl }}">{{site.title}}</a>
+            </p>
+            {% endif %}
 
             {% include navigation.html %}
 
@@ -39,7 +47,7 @@
                     {% include navigation.html %}
                 </section>
                 <section class="contacs">
-                    
+
                 </section>
             </div>
             <p>All rights reserved. &copy; 2019 {{site.title}} | Disign by Angel Aleksandrov</p>
