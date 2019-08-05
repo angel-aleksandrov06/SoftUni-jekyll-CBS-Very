@@ -21,11 +21,11 @@
     color: #FFF;
 }
 
-.site-header nav {
+.site-header .site-nav-header {
     display: flex;
 }
 
-.site-header nav ul {
+.site-header .site-nav-header ul {
     display: flex;
 }
 
@@ -36,7 +36,7 @@
     letter-spacing: 1px;
 }
 
-.site-header nav a{
+.site-header .site-nav-header a{
     display: flex;
     align-items: center;
     padding: 0 0.3rem;

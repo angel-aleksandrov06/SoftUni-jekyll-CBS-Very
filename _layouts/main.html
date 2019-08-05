@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{site.title}}</title>
+    <link rel="stylesheet" href="{{ site.baseurl }}/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/css/site.css">
-    <link rel="stylesheet" href="{{ site.baseurl }}/fontawesome/">
 </head>
 <body>
 
@@ -25,7 +25,7 @@
             </p>
             {% endif %}
 
-            {% include navigation.html %}
+            {% include navigation.html location="header"%}
 
         </header>
 
@@ -44,7 +44,7 @@
                 <section class="follow-us"></section>
                 <section class="site-map">
                     <span>LINKS</span>
-                    {% include navigation.html %}
+                    {% include navigation.html location="footer" %}
                 </section>
                 <section class="contacs">
 
