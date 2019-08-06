@@ -1,19 +1,24 @@
 .site-header {
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url('https://eurolease.bg/wp-content/uploads/2013/02/ballerina-3055155_1280.jpg') no-repeat content-box;
+    background-size: cover;
+}
+
+.nav-bar {
     display: flex;
     width: 100%;
     background: var(--color-header-footer);
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0 2em;
     border-bottom: var(--color-header-footer-border);
 }
 
-.site-header a {
+.nav-bar a {
     display: block;
     color: #FFF;
     text-decoration: none;
 }
 
-.site-header .site-title {
+.nav-bar .site-title {
     font-family: 'Playball', cursive;
     font-size: 2rem;
     padding: 0.5em 0;
@@ -21,58 +26,59 @@
     color: #FFF;
 }
 
-.site-header .site-nav-header {
+.nav-bar .site-nav-header {
     display: flex;
 }
 
-.site-header .site-nav-header ul {
+.nav-bar .site-nav-header ul {
     display: flex;
 }
 
-.site-header li {
-    display: flex;
-    margin: 0 0.7rem;
+.nav-bar li {
+    display: block;
+    margin: auto 0;
+    margin-left: 2.2em;
     font-weight: 600;
     letter-spacing: 1px;
 }
 
-.site-header .site-nav-header a{
+.site-nav-header a{
     display: flex;
     align-items: center;
     padding: 0 0.3rem;
     position: relative;
 }
 
-.site-header a:hover {
-    text-shadow: var(--text-shadow);
+.nav-bar a:hover {
+    /* text-shadow: var(--text-shadow); */
+    color: rgba(255, 255, 255, 0.5);
 }
 
-@media (max-width: 600px){
-    .site-header .site-title {
-        min-width: 5rem;
-        display: block
-    }
+.site-nav-header a i{
+    position: absolute;
+    top: 0;
+    left: -1.1em;
+}
 
-    .site-header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 1rem;
-    }
+.slogan {
+    display: flex;
+    widows: 90%;
+}
 
-    .site-header .site-nav-header ul {
-        display: flex;
-        flex-direction: column;
-    }
+.slogan div{
+    flex: 0 1 45%;
+    margin: 4rem;
+}
 
-    .site-header li {
-        flex: 1 0 20%;
-        display: block;
-        text-align: center;
-        padding: 0.4rem 0;
-    }
+.slogan .slogan-rigth {
+    text-align: right;
+}
 
-    .site-header .site-nav-header a {
-        display: block;
-    }
+.slogan  span {
+    color: #FFF;
+    text-shadow: 1.5px 1.5px 1.5px #000;
+    font-family: 'Playball', cursive;
+    font-size: 2rem;
+    margin: 0.8rem 0;
+    display: block;
 }

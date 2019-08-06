@@ -13,20 +13,34 @@
     <div class="site">
 
         <header class="site-header">
-            
+            <div class="nav-bar">
+                {% if page.home == true %}
+                <h1 class="site-title">
+                    <a href="{{ site.baseurl }}/">{{site.title}}</a>
+                </h1>
+                {% else %}
+
+                <p class="site-title">
+                    <a href="{{ site.baseurl }}/">{{site.title}}</a>
+                </p>
+                {% endif %}
+
+                {% include navigation.html location="header"%}
+            </div>
             {% if page.home == true %}
-            <h1 class="site-title">
-                <a href="{{ site.baseurl }}/">{{site.title}}</a>
-            </h1>
-            {% else %}
-
-            <p class="site-title">
-                <a href="{{ site.baseurl }}/">{{site.title}}</a>
-            </p>
+            <div class="slogan">
+                <div class="slogan-left">
+                    <span>Classical Ballet</span>
+                    <span>School</span>
+                    <span>VERY</span>
+                </div>
+                <div class="slogan-rigth">
+                    <span>Life without dance is like,</span>
+                    <span>life without air.</span>
+                    <span>IMPOSSIBLE!</span>
+                </div>
+            </div>
             {% endif %}
-
-            {% include navigation.html location="header"%}
-
         </header>
 
         <main class="site-main">
@@ -45,15 +59,15 @@
 
                 </section>
                 <section class="site-map">
-                    <span>LINKS</span>
+                    <h4>LINKS</h4>
                     {% include navigation.html location="footer" %}
                 </section>
                 <section class="footer-contacts">
-                    <span>CONTACTS</span>
+                    <h4>CONTACTS</h4>
                     <ul class="footer-contacts-ul">
-                        <li><i class="fas fa-phone-square"></i>+49 176 192 3511</li>
-                        <li><i class="fas fa-envelope-open-text"></i>{{ site.email }}</li>
-                        <li><i class="fas fa-map-marker-alt"></i>{{ site.addres }}</li>
+                        <li><span><i class="fas fa-phone-square"></i>+49 176 192 3511</span></li>
+                        <li><span><i class="fas fa-envelope-open-text"></i>{{ site.email }}</span></li>
+                        <li><span><i class="fas fa-map-marker-alt"></i>{{ site.addres }}</span></li>
                     </ul>
                 </section>
             </div>

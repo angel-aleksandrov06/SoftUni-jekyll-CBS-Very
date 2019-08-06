@@ -4,7 +4,6 @@
     padding: 1em auto;
     color: #FFF;
     margin: 0 auto;
-    /* text-align: center; */
 }
 
 .site-footer .follow-us {
@@ -13,10 +12,17 @@
 
 .site-footer a {
     color: #fff;
+    position: relative;
+}
+
+.site-footer a i {
+    position: absolute;
+    top: 0;
+    left: -1.6em;
 }
 
 .footer-container {
-    margin: 1rem auto 0;
+    margin: 0 auto;
     width: 80%;
     border-bottom: 2px solid #FFF;
     display: flex;
@@ -26,6 +32,7 @@
 .site-footer .follow-us,
 .site-footer .site-map,
 .site-footer .footer-contacts {
+    padding: 1em 2em;
     flex: 0 0 25%;
 }
 
@@ -34,7 +41,7 @@
     padding: 1rem 0;
 }
 
-.footer-container span {
+.footer-container h4 {
     font-weight: 700;
     font-style: italic;
     font-size: 1.5rem;
@@ -46,6 +53,11 @@
 }
 
 .footer-contacts li {
+    justify-content: center;
+    display: flex;
+}
+
+.footer-contacts span{
     position: relative;
 }
 
@@ -61,6 +73,6 @@
 }
 
 .site-footer p {
-    padding: 1.5rem 0;
+    padding: 1em 0;
     text-align: center;
 }
