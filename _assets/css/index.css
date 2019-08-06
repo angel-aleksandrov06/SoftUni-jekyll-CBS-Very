@@ -1,8 +1,84 @@
-.main-build {
+.index-about-ballet,
+.index-groups {
+    margin: 0 auto;
+    padding: 2rem 0 3rem;
+}
+
+.index-about-ballet {
+    width: 50%;
+}
+
+.index-main-header {
+    text-align: center;
+    color: rgb(152, 121, 172);
+    padding-top: 3rem;
+}
+
+.index-main-header h2 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.index-main-header p {
+    border: 2px solid  rgb(76, 26, 109);
+    max-width: 5rem;
+    margin: 1em auto;
+}
+
+.index-about-ballet p {
+    /* color: rgb(152, 121, 172); */
+    color: rgb(76, 26, 109);
+    text-align: center;
+    margin: 2rem auto;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+
+.index-groups-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.group-kids,
+.group-junior {
+    flex: 1 1 30%;
+    /* background: #F00; */
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 5rem ;
+    justify-content: space-around;
+}
+
+.group-kids h3,
+.group-junior h3 {
+    color: rgb(152, 121, 172);
+    text-align: center;
+}
+
+.group-kids>div,
+.group-junior>div {
+    width: 200px;
+    height: auto;
+    margin: 1rem auto;
+    display: flex;
+    padding: 1rem;
+    border: 2px solid  rgb(76, 26, 109);
+}
+
+.group-kids>div img,
+.group-junior>div img {
     width: 100%;
 }
 
-.main-build p {
-    margin: 3rem 0;
+.group-kids p,
+.group-junior p {
     text-align: center;
+    color: rgb(76, 26, 109);
+    font-weight: 600;
+    letter-spacing: 1px;
 }

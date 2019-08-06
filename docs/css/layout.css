@@ -2,7 +2,29 @@
     width: 100%;
 }
 
-@media (max-width: 600px){
+.site-main {
+    background: #EEEEEE;
+    box-shadow: inset 3px 3px 36px -3px rgba(0,0,0,0.75);
+}
+
+@media ( max-width: 400px) {
+    .slogan {
+        padding: 0;
+    }
+
+    .slogan div {
+        margin: 1rem 2rem;
+    }
+    .slogan div span {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 660px){
+    .slogan {
+        padding: 2rem 0;
+    }
+
     .site-header {
         background-position: center ;
     }
@@ -27,7 +49,7 @@
     .nav-bar li {
         flex: 1 0 20%;
         display: block;
-        text-align: center;
+        text-align: left;
         padding: 0.4rem 0;
     }
 
@@ -50,7 +72,30 @@
         text-align: center;
     }
 
+    .site-footer .site-map {
+        text-align: left;
+    }
+
     .footer-contacts li {
         justify-content: center;
+    }
+
+    /* index */
+
+    .index-about-ballet {
+        width: 85%;
+    }
+
+    .group-kids,
+    .group-junior {
+        margin: 0 auto;
+    }
+
+    .index-groups-wrapper div {
+        margin-top: 1rem;
+    }
+
+    .index-groups-wrapper div:not(:last-child){
+        margin-bottom: 3rem;
     }
 }
