@@ -45,4 +45,12 @@
         margin: 0 auto;
         text-align: center;
     }
+
+    .footer-slogan p {
+        text-align: center;
+    }
+
+    .footer-contacts li {
+        justify-content: center;
+    }
 }

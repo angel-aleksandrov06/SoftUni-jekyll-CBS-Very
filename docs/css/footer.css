@@ -6,26 +6,12 @@
     margin: 0 auto;
 }
 
-.site-footer .follow-us {
-
-}
-
-.site-footer a {
-    color: #fff;
-    position: relative;
-}
-
-.site-footer a i {
-    position: absolute;
-    top: 0;
-    left: -1.6em;
-}
-
 .footer-container {
     margin: 0 auto;
     width: 80%;
     border-bottom: 2px solid #FFF;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
@@ -48,12 +34,8 @@
     letter-spacing: 1px;
 }
 
-.footer-container .site-map a:hover {
-    text-shadow: var(--text-shadow);
-}
-
 .footer-contacts li {
-    justify-content: center;
+    justify-content: flex-start;
     display: flex;
 }
 
@@ -68,11 +50,51 @@
     margin-right: 0.8rem;
 }
 
-.footer-contacts .fa-map-marker-alt {
+.follow-us .footer-slogan,
+.follow-us .icon-container {
+    padding-top: 1rem;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon-container a {
+    display: block;
+    color: #FFF;
+}
+
+.icon-container a:hover {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-slogan p {
+    text-align: left;
+    padding-top: 0.5rem;
+}
+
+.site-map a {
+    color: #fff;
+    position: relative;
+}
+
+.site-map a i {
+    position: absolute;
+    top: 0;
+    left: -1.6em;
+}
+
+.site-map a:hover {
+    text-shadow: var(--text-shadow);
+}
+
+
+.footer-contacts-ul .fa-map-marker-alt {
     top: 0.5rem;
 }
 
-.site-footer p {
+.site-footer>p {
     padding: 1em 0;
     text-align: center;
 }
