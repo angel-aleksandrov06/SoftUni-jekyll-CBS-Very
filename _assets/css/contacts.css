@@ -13,6 +13,10 @@
     border: var(--color-site-border);
     max-width: 5rem;
     margin: 1em auto;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.1rem;
+
 }
 
 .contacts-container {
@@ -66,4 +70,5 @@
     padding: 1rem;
     border-radius: 0.5rem;
     margin: 3rem 0;
+    box-shadow: var(--box-shadow-defout);
 }

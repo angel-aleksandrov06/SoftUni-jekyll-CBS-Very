@@ -67,6 +67,8 @@
     display: flex;
     padding: 1rem;
     border: var(--color-site-border);
+    border-radius: 0.5rem;
+    box-shadow: var(--box-shadow-defout);
 }
 
 .group-kids>div img,

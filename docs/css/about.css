@@ -5,6 +5,7 @@
     color: var(--color-font-main-html);
     font-weight: 600;
     font-style: italic;
+    font-size: 1.1rem;
 }
 
 .about-header {
@@ -35,13 +36,14 @@
     ;
     grid-gap: 1rem;
     padding: 3rem 0;
+    
 }
 
 .wrapper-grid h3 {
     font-weight: bold;
     color: var(--color-fot-main-headers);
     text-align: center;
-    margin: 0 auto 3rem auto;
+    margin: 2rem auto 3rem auto;
     border-top: var(--color-site-border);
     padding-top: 3rem;
 }
@@ -51,6 +53,9 @@
 }
 
 .about-grid-img-section2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     grid-area: photo-school;
     
 }
@@ -61,11 +66,18 @@
     border: var(--color-site-border);
     padding: 1rem;
     border-radius: 0.5rem;
+    box-shadow: var(--box-shadow-defout);
 }
 
 .about-grid-img-section3 {
     grid-area: landscape-photo;
-    background: url(https://timedotcom.files.wordpress.com/2015/05/ballet-class.jpg)
+    background: url('https://timedotcom.files.wordpress.com/2015/05/ballet-class.jpg') no-repeat center center;
+    background-size: cover;
+    min-height: 15rem;
+    border: var(--color-site-border);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: var(--box-shadow-defout);
 }
 
 .about-grid-text-section4 {
@@ -88,6 +100,7 @@
     border: var(--color-site-border);
     padding: 1rem;
     border-radius: 0.5rem;
+    box-shadow: var(--box-shadow-defout);
 }
 
 .teacher-info {

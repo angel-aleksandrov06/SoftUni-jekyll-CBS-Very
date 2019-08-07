@@ -5,4 +5,6 @@
     --color-fot-main-headers: rgb(152, 121, 172);
     --color-hover-header-footer: rgba(255, 255, 255, 0.5);
     
+    --box-shadow-defout:  3px 3px 36px -3px rgba(0,0,0,0.75);
+    --box-shadow-insert: inset 3px 3px 36px -3px rgba(0,0,0,0.75);
 }

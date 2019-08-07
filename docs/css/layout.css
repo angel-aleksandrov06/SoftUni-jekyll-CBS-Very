@@ -137,6 +137,22 @@
     .contacts-container .contacts-ul-main {
         padding: 3rem;
     }
+
+    /* news */
+
+    .news-container {
+        width: 100%;
+        padding: 2rem;
+    }
+    
+    .news-container li p {
+        margin: 4rem 0 0 0;
+    }
+
+    .news-container li i {
+        top: -4rem ;
+        left: 0;
+    }
 }
 
 
@@ -164,5 +180,20 @@
         width: 80%;
         display: block;
         margin: 0 auto;
+    }
+
+    /* news */
+
+    .news-container {
+        width: 100%;
+        padding: 1rem;
+        margin: 0 auto 2rem ;
+        border: none;
+        border-radius: none;
+        box-shadow: none;
+    }
+
+    .news-container li {
+        padding: 1rem;
     }
 }
