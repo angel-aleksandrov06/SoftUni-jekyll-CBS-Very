@@ -71,11 +71,7 @@
                 </section>
                 <section class="footer-contacts">
                     <h4>CONTACTS</h4>
-                    <ul class="footer-contacts-ul">
-                        <li><span><i class="fas fa-phone-square"></i>+49 176 192 3511</span></li>
-                        <li><span><i class="fas fa-envelope-open-text"></i>{{ site.email }}</span></li>
-                        <li><span><i class="fas fa-map-marker-alt"></i>{{ site.addres }}</span></li>
-                    </ul>
+                    {% include contacts-section.html location="footer"%}
                 </section>
             </div>
             <p>All rights reserved. &copy; 2019 {{site.title}} | Disign by Angel Aleksandrov</p>

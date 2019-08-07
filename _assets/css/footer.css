@@ -22,7 +22,7 @@
     flex: 0 0 25%;
 }
 
-.footer-contacts-ul,
+.contacts-ul-footer,
 .site-footer .site-nav-footer{
     padding: 1rem 0;
 }
@@ -57,12 +57,13 @@
 
 .icon-container {
     display: flex;
-    justify-content: space-between;
+    
 }
 
 .icon-container a {
     display: block;
     color: #FFF;
+    margin-right: 0.7rem;
 }
 
 .icon-container a:hover,
@@ -86,10 +87,7 @@
     left: -1.6em;
 }
 
-
-
-
-.footer-contacts-ul .fa-map-marker-alt {
+.contacts-ul-footer .fa-map-marker-alt {
     top: 0.5rem;
 }
 
