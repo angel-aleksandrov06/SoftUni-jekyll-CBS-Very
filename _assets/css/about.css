@@ -1,0 +1,96 @@
+.about-school,
+.about-teacher {
+    width: 70%;
+    margin: 0 auto;
+    color: var(--color-font-main-html);
+    font-weight: 600;
+    font-style: italic;
+}
+
+.about-header {
+    text-align: center;
+    color: var(--color-fot-main-headers);
+    padding-top: 3rem;
+}
+
+.about-header h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--color-fot-main-headers);
+}
+
+.about-header p {
+    border: var(--color-site-border);
+    max-width: 5rem;
+    margin: 1em auto;
+}
+
+.wrapper-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-areas:
+        "text text photo-school"
+        "text text photo-school"
+        "landscape-photo landscape-photo landscape-photo"
+        "mission mission mission"
+    ;
+    grid-gap: 1rem;
+    padding: 3rem 0;
+}
+
+.wrapper-grid h3 {
+    font-weight: bold;
+    color: var(--color-fot-main-headers);
+    text-align: center;
+    margin: 0 auto 3rem auto;
+    border-top: var(--color-site-border);
+    padding-top: 3rem;
+}
+
+.about-grid-text-section1 {
+    grid-area: text;
+}
+
+.about-grid-img-section2 {
+    grid-area: photo-school;
+    
+}
+
+.about-grid-img-section2 img {
+    max-width: 25rem;
+    max-height: 15rem;
+    border: var(--color-site-border);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.about-grid-img-section3 {
+    grid-area: landscape-photo;
+    background: url(https://timedotcom.files.wordpress.com/2015/05/ballet-class.jpg)
+}
+
+.about-grid-text-section4 {
+    grid-area: mission;
+}
+
+.wrapper-teacher {
+    display: flex;
+    margin: 3rem 5rem;
+    justify-content: space-around;
+}
+
+.teacher-photo {
+    flex: 0 0 30%;
+    margin-right: 2rem;
+}
+
+.teacher-photo img {
+    max-width: 100%;
+    border: var(--color-site-border);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.teacher-info {
+    flex: 1 1 60%;
+}

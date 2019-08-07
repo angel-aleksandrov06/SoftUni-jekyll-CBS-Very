@@ -1,6 +1,8 @@
 :root {
     --color-header-footer: rgb(152, 121, 172);
-    --color-header-footer-border: 2px solid  rgb(76, 26, 109);
-
-    --text-shadow: 0px 8px 12px rgb(0, 0, 0);
+    --color-site-border: 2px solid  rgb(76, 26, 109);
+    --color-font-main-html: rgb(76, 26, 109);
+    --color-fot-main-headers: rgb(152, 121, 172);
+    --color-hover-header-footer: rgba(255, 255, 255, 0.5);
+    
 }

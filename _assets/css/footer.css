@@ -1,6 +1,6 @@
 .site-footer {
     background: var(--color-header-footer);
-    border-top: var(--color-header-footer-border);
+    border-top: var(--color-site-border);
     padding: 1em auto;
     color: #FFF;
     margin: 0 auto;
@@ -65,8 +65,9 @@
     color: #FFF;
 }
 
-.icon-container a:hover {
-    color: rgba(255, 255, 255, 0.5);
+.icon-container a:hover,
+.site-map a:hover {
+    color: var(--color-hover-header-footer);
 }
 
 .footer-slogan p {
@@ -85,9 +86,7 @@
     left: -1.6em;
 }
 
-.site-map a:hover {
-    text-shadow: var(--text-shadow);
-}
+
 
 
 .footer-contacts-ul .fa-map-marker-alt {

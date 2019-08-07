@@ -3,99 +3,158 @@
 }
 
 .site-main {
-    background: #EEEEEE;
+    background: #DDD;
     box-shadow: inset 3px 3px 36px -3px rgba(0,0,0,0.75);
+    padding: 2rem;
 }
 
-@media ( max-width: 400px) {
-    .slogan {
-        padding: 0;
+@media ( max-width: 1024px ) {
+    .about-school, .about-teacher{
+        width: 90%;
+    }
+    
+    .wrapper-grid {
+        display: block;
     }
 
-    .slogan div {
-        margin: 1rem 2rem;
+    .about-grid-img-section2 {
+        display: flex;
+        justify-content: center;
     }
-    .slogan div span {
-        font-size: 1.5rem;
+
+    .about-grid-img-section2 img {
+        margin: 2rem auto;
     }
+
+    .wrapper-teacher {
+        flex-direction: column;
+        margin: 3rem 0;
+    }
+
+    .teacher-photo {
+        margin: 0;
+    }
+
+    .teacher-photo img {
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .teacher-info {
+        padding: 2rem 0;
+        display: block;
+        width: 100%;
+    }
+
 }
 
 @media (max-width: 660px){
     .slogan {
         padding: 2rem 0;
     }
-
+    
+    .slogan div {
+        margin: 3rem 1rem;
+    }
+    
     .site-header {
         background-position: center ;
     }
-
+    
     .nav-bar .site-title {
         min-width: 5rem;
         display: block
     }
-
+    
     .nav-bar {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 1rem;
     }
-
+    
     .nav-bar .site-nav-header ul {
         display: flex;
         flex-direction: column;
     }
-
+    
     .nav-bar li {
         flex: 1 0 20%;
         display: block;
         text-align: left;
         padding: 0.4rem 0;
     }
-
+    
     .site-nav-header a {
         display: block;
     }
-
+    
     .footer-container {
         flex-direction: column;
     }
-
+    
     .site-footer .follow-us,
     .site-footer .site-map,
     .site-footer .footer-contacts {
         margin: 0 auto;
         text-align: center;
     }
-
+    
     .footer-slogan p {
         text-align: center;
     }
-
+    
     .site-footer .site-map {
         text-align: left;
     }
-
+    
     .footer-contacts li {
         justify-content: center;
     }
-
+    
     /* index */
-
+    
     .index-about-ballet {
         width: 85%;
     }
-
+    
     .group-kids,
     .group-junior {
         margin: 0 auto;
     }
-
+    
     .index-groups-wrapper div {
         margin-top: 1rem;
     }
 
     .index-groups-wrapper div:not(:last-child){
         margin-bottom: 3rem;
+    }
+}
+@media ( max-width: 400px) {
+    .slogan {
+        padding: 0;
+        flex-wrap: wrap;
+    }
+
+    .slogan .slogan-rigth {
+        text-align: left;
+    }
+
+    .slogan div {
+        margin: 1rem 1rem;
+    }
+
+    .slogan div span {
+        font-size: 1.5rem;
+    }
+
+    /* about */
+
+    .teacher-photo img {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
     }
 }

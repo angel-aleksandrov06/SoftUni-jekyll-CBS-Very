@@ -9,7 +9,7 @@
     background: var(--color-header-footer);
     justify-content: space-around;
     padding: 0 2em;
-    border-bottom: var(--color-header-footer-border);
+    border-bottom: var(--color-site-border);
 }
 
 .nav-bar a {
@@ -50,8 +50,7 @@
 }
 
 .nav-bar a:hover {
-    /* text-shadow: var(--text-shadow); */
-    color: rgba(255, 255, 255, 0.5);
+    color: var(--color-hover-header-footer);
 }
 
 .site-nav-header a i{
