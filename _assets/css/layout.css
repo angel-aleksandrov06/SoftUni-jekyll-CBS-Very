@@ -100,6 +100,10 @@
         margin: 0 auto;
         text-align: center;
     }
+
+    .icon-container {
+        justify-content: center;
+    }
     
     .footer-slogan p {
         text-align: center;
@@ -108,9 +112,11 @@
     .site-footer .site-map {
         text-align: left;
     }
-    
+
+    .site-footer .site-map li,
     .footer-contacts li {
         justify-content: center;
+        margin-top: 0.5rem;
     }
     
     /* index */
@@ -134,8 +140,10 @@
 
     /* contacts */
 
+    .map,
     .contact-form {
         max-width: 35rem;
+        margin: 0 auto 2rem;
         width: auto;
     }
 
@@ -143,14 +151,20 @@
         padding: 3rem;
     }
 
-    .contact-form fieldset {
-        flex-direction: column;
+    .map {
+        padding: 0;
+    }
+
+    .map img {
+        max-width: 100%;
+    }
+
+    .contact-form .left {
+        width: 100%;
     }
 
     .contact-form .right {
-        display: block;
-        min-height: 4rem;
-        margin-bottom: 3rem;
+        width: 100%;
     }
 
     .contact-form .right textarea{
@@ -194,6 +208,10 @@
     }
 
     /* about */
+
+    .about-grid-img-section2 img{
+        max-width: 100%;
+    }
 
     .teacher-photo img {
         width: 80%;
