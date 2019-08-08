@@ -134,8 +134,27 @@
 
     /* contacts */
 
+    .contact-form {
+        max-width: 35rem;
+        width: auto;
+    }
+
     .contacts-container .contacts-ul-main {
         padding: 3rem;
+    }
+
+    .contact-form fieldset {
+        flex-direction: column;
+    }
+
+    .contact-form .right {
+        display: block;
+        min-height: 4rem;
+        margin-bottom: 3rem;
+    }
+
+    .contact-form .right textarea{
+        margin: 2rem 0;
     }
 
     /* news */

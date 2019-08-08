@@ -67,6 +67,7 @@
     padding: 1rem;
     border-radius: 0.5rem;
     box-shadow: var(--box-shadow-defout);
+    margin: 0 auto;
 }
 
 .about-grid-img-section3 {

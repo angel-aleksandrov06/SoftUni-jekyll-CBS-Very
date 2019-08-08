@@ -72,3 +72,75 @@
     margin: 3rem 0;
     box-shadow: var(--box-shadow-defout);
 }
+
+.contact-form {
+    width: 40rem;
+    margin: 2rem auto;
+    background: var(--color-header-footer);
+    border: var(--color-site-border);
+    border-radius: 0.5rem;
+    box-shadow: var(--box-shadow-defout);
+    padding: 2rem;
+    
+}
+
+.contact-form fieldset {
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact-form legend {
+    color: #FFF;
+    font-weight: bold;
+    padding-bottom: 2rem;
+    margin: 0 auto;
+    font-size: 1.3rem;
+}
+
+.contact-form .left,
+.contact-form .right {
+    flex: 0 0 45%;
+    display: block;
+}
+
+.contact-form .left input,
+.contact-form .right textarea {
+    padding: 1.2rem;
+    display: block;
+    width: 100%;
+    border: var(--color-site-border);
+    border-radius: 0.5rem;
+    color: var(--color-font-main-html);
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+}
+
+.contact-form .left input:not(:first-child) {
+    margin-top: 1rem;
+}
+
+.contact-form .right textarea {
+    height: 100%;
+}
+
+.button {
+    flex: 0 0 100%;
+    /* background: var(--color-header-footer); */
+    border: var(--color-site-border);
+    border-radius: 0.5rem;
+    background: #FFF;;
+    color: var(--color-font-main-html);
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.8rem;
+    margin-top: 2rem;
+    background: #DDD;
+}
+
+.button:hover {
+    cursor: pointer;
+    background: var(--color-hover-header-footer);
+}

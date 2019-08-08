@@ -5,6 +5,10 @@ html {
     font: 12px/1.2 "Fira Sans", sans-serif;
 }
 
+body, table, th, td, form, input, textarea, option, select {
+	font: inherit;
+}
+
 @media ( min-width: 660px ) {
     html { font-size: 14px; }
 }
