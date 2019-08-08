@@ -4,7 +4,7 @@
 
 .site-main {
     background: #DDD;
-    box-shadow: inset 3px 3px 36px -3px rgba(0,0,0,0.75);
+    box-shadow: var(--box-shadow-inset);
     padding: 2rem;
 }
 
