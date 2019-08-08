@@ -171,6 +171,19 @@
         margin: 2rem 0;
     }
 
+    /* gallery */
+
+    .gallery {
+        padding: 3rem;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .galery-content li {
+        flex: 0 0 47%;
+        margin-bottom: 6%;
+    }
+
     /* news */
 
     .news-container {
@@ -217,6 +230,25 @@
         width: 80%;
         display: block;
         margin: 0 auto;
+    }
+
+    /* gallery */
+
+    .gallery {
+        padding: 1rem;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .galery-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .galery-content li {
+        flex: 0 0 80%;
+        margin-bottom: 6%;
     }
 
     /* news */
