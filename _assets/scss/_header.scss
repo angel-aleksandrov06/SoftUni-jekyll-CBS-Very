@@ -1,0 +1,104 @@
+.site-header {
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url('https://eurolease.bg/wp-content/uploads/2013/02/ballerina-3055155_1280.jpg') no-repeat content-box;
+    background-size: cover;
+}
+
+.nav-bar {
+    display: flex;
+    width: 100%;
+    background: var(--color-header-footer);
+    justify-content: space-around;
+    padding: 0 2em;
+    border-bottom: var(--color-site-border);
+    
+    & a {
+        display: block;
+        color: #FFF;
+        text-decoration: none;
+    }
+
+    & .site-nav-header {
+        display: flex;
+    }
+
+    & .site-nav-header ul {
+        display: flex;
+    }
+
+    & li {
+        display: block;
+        margin: auto 0;
+        margin-left: 2.2em;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+
+    & a{
+        display: flex;
+        align-items: center;
+        padding: 0 0.3rem;
+        position: relative;
+    }
+
+    & a:hover {
+        color: var(--color-hover-header-footer);
+    }
+
+    & a i{
+        position: absolute;
+        top: 0;
+        left: -1.1em;
+    }
+}
+
+.site-title {
+    font-family: 'Playball', cursive;
+    font-size: 2rem;
+    padding: 0.5em 0;
+    font-weight: 700;
+    color: #FFF;
+}
+
+.slogan {
+    display: flex;
+    widows: 90%;
+    padding: 2rem 0;
+
+    & div{
+        flex: 0 1 45%;
+        margin: 4rem;
+    }
+
+    &-rigth {
+        text-align: right;
+    }
+
+    & span {
+        color: #FFF;
+        text-shadow: 1.5px 1.5px 1.5px #000;
+        font-family: 'Playball', cursive;
+        font-size: 2rem;
+        margin: 0.8rem 0;
+        display: block;
+    }
+
+    // page.home != true
+
+    &-little {
+        display:flex;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 0;
+        padding: 2rem 2rem;
+        justify-content: space-evenly;
+
+        & p {
+            flex: 0 0 50%;
+            color: #FFF;
+            text-shadow: 1.5px 1.5px 1.5px #000;
+            font-family: 'Playball', cursive;
+            font-size: 2rem;
+            text-align: center;
+        }
+    }
+}

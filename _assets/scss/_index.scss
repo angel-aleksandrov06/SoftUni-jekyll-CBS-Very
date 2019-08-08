@@ -1,0 +1,62 @@
+.index-about-ballet,
+.index-groups {
+    margin: 0 auto;
+}
+
+.index-about-ballet {
+    width: 60%;
+
+    & p {
+        /* color: rgb(152, 121, 172); */
+        color: var(--color-font-main-html);
+        text-align: center;
+        margin: 2rem auto;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+}
+
+.index-groups-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+
+    & h3 {
+        color: var(--color-fot-main-headers);
+        text-align: center;
+    }
+
+    & div img {
+        width: 100%;
+    }
+
+    & p {
+        text-align: center;
+        color: var(--color-font-main-html);
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+}
+
+.group-minjons,
+.group-junior {
+    flex: 0 0 30%;
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 5rem ;
+    justify-content: space-around;
+}
+
+.group-minjons > div,
+.group-junior > div {
+    width: 200px;
+    height: auto;
+    margin: 1rem auto;
+    display: flex;
+    padding: 1rem;
+    border: var(--color-site-border);
+    border-radius: 0.5rem;
+    box-shadow: var(--box-shadow-defout);
+}

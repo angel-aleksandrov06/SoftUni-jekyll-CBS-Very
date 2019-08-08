@@ -1,0 +1,100 @@
+.site-footer {
+    background: var(--color-header-footer);
+    border-top: var(--color-site-border);
+    padding: 1em auto;
+    color: #FFF;
+    margin: 0 auto;
+
+    & .follow-us,
+    & .site-map,
+    & .footer-contacts {
+        padding: 1em 2em;
+        flex: 0 0 25%;
+    }
+
+    & > p {
+        padding: 1em 0.5em;
+        text-align: center;
+    }
+}
+
+.contacts-ul-footer,
+.site-footer .site-nav-footer{
+    padding: 1rem 0;
+}
+
+.contacts-ul-footer .fa-map-marker-alt {
+    top: 0.5rem;
+}
+
+.footer-container {
+    margin: 0 auto;
+    width: 80%;
+    border-bottom: 2px solid #FFF;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    & h4 {
+        font-weight: 700;
+        font-style: italic;
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+    }
+
+    & li {
+        justify-content: flex-start;
+        display: flex;
+    }
+
+    & span{
+        position: relative;
+    }
+
+}
+
+.footer-contacts i {
+    position: absolute;
+    top: 0;
+    left: -1.5rem;
+    margin-right: 0.8rem;
+}
+
+.footer-slogan,
+.icon-container {
+    padding-top: 1rem;
+}
+
+.icon-container {
+    display: flex;
+    
+    & a {
+        display: block;
+        color: #FFF;
+        margin-right: 0.7rem;
+
+        &:hover{
+            color: var(--color-hover-header-footer);
+        }
+    }
+}
+
+.footer-slogan p {
+    text-align: left;
+    padding-top: 0.5rem;
+}
+
+.site-map a {
+    color: #fff;
+    position: relative;
+
+    &:hover {
+        color: var(--color-hover-header-footer);
+    }
+
+    & i {
+        position: absolute;
+        top: 0;
+        left: -1.6em;
+    }
+}

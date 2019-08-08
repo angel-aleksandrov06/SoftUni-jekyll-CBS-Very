@@ -8,6 +8,25 @@
     padding: 2rem;
 }
 
+/* main-header */
+
+.main-header {
+    text-align: center;
+    padding: 3rem;
+}
+
+.main-header h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--color-fot-main-headers);
+}
+
+.main-header p {
+    border: var(--color-site-border);
+    max-width: 5rem;
+    margin: 1em auto;
+}
+
 @media ( max-width: 1024px ) {
     .about-school, .about-teacher{
         width: 90%;
@@ -56,6 +75,15 @@
     
     .slogan div {
         margin: 3rem 1rem;
+    }
+
+    .slogan-little  p {
+        color: #FFF;
+        text-shadow: 1.5px 1.5px 1.5px #000;
+        font-family: 'Playball', cursive;
+        font-size: 2rem;
+        flex: 0 0 100%;
+        margin-bottom: 0.5rem;
     }
     
     .site-header {
@@ -174,7 +202,8 @@
     /* gallery */
 
     .gallery {
-        padding: 3rem;
+        width: 100%;
+        padding: 2rem;
         margin: 0 auto;
         display: block;
     }
@@ -235,7 +264,8 @@
     /* gallery */
 
     .gallery {
-        padding: 1rem;
+        width: 100%;
+        padding: 1rem 0;
         margin: 0 auto;
         display: block;
     }

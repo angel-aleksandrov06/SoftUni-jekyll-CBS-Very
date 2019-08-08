@@ -1,0 +1,134 @@
+.contacts-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+
+    & .contacts-ul-main {
+        padding: 3rem 0;
+    }
+
+    & li {
+        margin: 1rem 0;
+        display: flex;
+    }
+
+    & span {
+        color: var(--color-font-main-html);
+        position: relative;
+        font-size: 1.3rem;
+        margin: 0 auto;
+        text-align: center;
+
+        & i {
+            position: absolute;
+            top: 0;
+            left: -1.5rem;
+        }
+    }
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+
+    & h3 {
+        flex: 0 0 100%;
+        color: var(--color-fot-main-headers);
+        text-align: center;
+        font-weight: bold;
+    }
+
+    & img {
+        display: block;
+        max-width: 40rem;
+        border: var(--color-site-border);
+        padding: 1rem;
+        border-radius: 0.5rem;
+        margin: 3rem auto;
+        box-shadow: var(--box-shadow-defout);
+    }
+}
+
+.contact-form {
+    width: 40rem;
+    margin: 2rem auto;
+    background: var(--color-header-footer);
+    border: var(--color-site-border);
+    border-radius: 0.5rem;
+    box-shadow: var(--box-shadow-defout);
+    padding: 2rem;
+    
+    & fieldset {
+        border: none;
+        display: block;
+    }
+
+    & legend {
+        color: #FFF;
+        font-weight: bold;
+        padding-bottom: 2rem;
+        margin: 0 auto;
+        font-size: 1.3rem;
+    }
+
+    & .left,
+    & .right {
+        display: block;
+        float: left;
+    }
+
+    & .left {
+        width: 48%;
+        margin-right: 2%;
+        display: block;
+    }
+
+    & .right {
+        width: 50%;
+    }
+
+    & .left input,
+    & .right textarea {
+        padding: 1.2rem;
+        display: block;
+        width: 100%;
+        border: var(--color-site-border);
+        border-radius: 0.5rem;
+        color: var(--color-font-main-html);
+        font-weight: bold;
+        letter-spacing: 1px;
+        font-size: 1.1rem;
+    }
+
+    & .left input:not(:first-child) {
+        margin-top: 1rem;
+    }
+
+    & .right textarea {
+        margin: 0 auto;
+        min-height: 14rem;
+    }
+}
+
+.button {
+    flex: 0 0 100%;
+    width: 100%;
+    /* background: var(--color-header-footer); */
+    border: var(--color-site-border);
+    border-radius: 0.5rem;
+    background: #FFF;;
+    color: var(--color-font-main-html);
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.8rem;
+    margin-top: 2rem;
+    background: #DDD;
+
+    &:hover {
+        cursor: pointer;
+        background: var(--color-hover-header-footer);
+    }
+}

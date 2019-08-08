@@ -1,0 +1,80 @@
+.galery-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1em;
+    grid-auto-flow: dense;
+    width: 80%;
+    margin: 0 auto;
+    padding: 5rem;
+
+    & a,
+    & span,
+    & img {
+        display: block;
+    }
+
+    & img {
+        width: 100%;
+        height: auto;
+    }
+
+    & li {
+        display: block;
+        position: relative;
+        overflow: hidden;
+        grid-column: span 2;
+
+        &::before {
+            display: block;
+            content: '';
+            padding-top: 50%;
+        }
+
+        &.portrait {
+            grid-column: span 1;
+            grid-row: span 2;
+        }
+
+        &.portrait a {
+            display: flex;
+        }
+
+        &.small img,
+        &.portrait img {
+            width: auto;
+            height: 100%;
+        }
+
+        &.portrait::before {
+            padding-top: 200%;
+        }
+
+        &.small {
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+
+        &.small::before {
+            padding-top: 100%;
+        }
+
+        & > a {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+        }
+
+        & > a:hover img {
+            position: relative;
+            z-index: 1;
+        }
+
+        & > a:hover::before {
+            content: '';
+            display: block;
+            background: rgba(0,0,0,0.5);
+            z-index: 2;
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+        }
+    }
+}

@@ -27,7 +27,9 @@
 
                 {% include navigation.html location="header"%}
             </div>
+
             {% if page.home == true %}
+
             <div class="slogan">
                 <div class="slogan-left">
                     <span>Classical Ballet</span>
@@ -39,6 +41,13 @@
                     <span>life without air.</span>
                     <span>IMPOSSIBLE!</span>
                 </div>
+            </div>
+
+            {% else %}
+
+            <div class="slogan-little">
+                <p>Life without dance is like life without air.</p>
+                <p>IMPOSSIBLE!</p>
             </div>
             {% endif %}
         </header>
