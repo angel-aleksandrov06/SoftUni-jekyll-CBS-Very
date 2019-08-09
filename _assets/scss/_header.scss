@@ -31,6 +31,8 @@
         margin-left: 2.2em;
         font-weight: 600;
         letter-spacing: 1px;
+        animation: slideInDiagonal 0.3s ease-in;
+        animation-fill-mode: both;
     }
 
     & a{
@@ -38,6 +40,7 @@
         align-items: center;
         padding: 0 0.3rem;
         position: relative;
+        
     }
 
     & a:hover {
@@ -57,16 +60,17 @@
     padding: 0.5em 0;
     font-weight: 700;
     color: #FFF;
+    animation: slideInDiagonal 0.3s ease-in;
 }
 
 .slogan {
     display: flex;
-    widows: 90%;
     padding: 2rem 0;
+    animation: slideInDiagonal 0.3s ease-in;
 
-    & div{
+    & div {
         flex: 0 1 45%;
-        margin: 4rem;
+        margin: 1rem;
     }
 
     &-rigth {
@@ -91,6 +95,8 @@
         padding: 0;
         padding: 2rem 2rem;
         justify-content: space-evenly;
+        animation: slideInDiagonal 0.3s ease-in;
+        animation-fill-mode: both;
 
         & p {
             flex: 0 0 50%;
@@ -102,3 +108,9 @@
         }
     }
 }
+
+.slogan-little { animation-delay: 0.1s; }
+.nav-bar li:nth-child(1) { animation-delay: 0.2s; }
+.nav-bar li:nth-child(2) { animation-delay: 0.3s; }
+.nav-bar li:nth-child(3) { animation-delay: 0.4s; }
+.nav-bar li:nth-child(4) { animation-delay: 0.5s; }

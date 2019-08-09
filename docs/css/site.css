@@ -90,7 +90,11 @@ li {
     margin: auto 0;
     margin-left: 2.2em;
     font-weight: 600;
-    letter-spacing: 1px; }
+    letter-spacing: 1px;
+    -webkit-animation: slideInDiagonal 0.3s ease-in;
+            animation: slideInDiagonal 0.3s ease-in;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both; }
   .nav-bar a {
     display: flex;
     align-items: center;
@@ -108,15 +112,18 @@ li {
   font-size: 2rem;
   padding: 0.5em 0;
   font-weight: 700;
-  color: #FFF; }
+  color: #FFF;
+  -webkit-animation: slideInDiagonal 0.3s ease-in;
+          animation: slideInDiagonal 0.3s ease-in; }
 
 .slogan {
   display: flex;
-  widows: 90%;
-  padding: 2rem 0; }
+  padding: 2rem 0;
+  -webkit-animation: slideInDiagonal 0.3s ease-in;
+          animation: slideInDiagonal 0.3s ease-in; }
   .slogan div {
     flex: 0 1 45%;
-    margin: 4rem; }
+    margin: 1rem; }
   .slogan-rigth {
     text-align: right; }
   .slogan span {
@@ -132,7 +139,11 @@ li {
     width: 100%;
     padding: 0;
     padding: 2rem 2rem;
-    justify-content: space-evenly; }
+    justify-content: space-evenly;
+    -webkit-animation: slideInDiagonal 0.3s ease-in;
+            animation: slideInDiagonal 0.3s ease-in;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both; }
     .slogan-little p {
       flex: 0 0 50%;
       color: #FFF;
@@ -140,6 +151,99 @@ li {
       font-family: 'Playball', cursive;
       font-size: 2rem;
       text-align: center; }
+
+.slogan-little {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s; }
+
+.nav-bar li:nth-child(1) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+
+.nav-bar li:nth-child(2) {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s; }
+
+.nav-bar li:nth-child(3) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s; }
+
+.nav-bar li:nth-child(4) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s; }
+
+.site-footer {
+  background: var(--color-header-footer);
+  border-top: var(--color-site-border);
+  padding: 1em auto;
+  color: #FFF;
+  margin: 0 auto; }
+  .site-footer .follow-us,
+  .site-footer .site-map,
+  .site-footer .footer-contacts {
+    padding: 1em 2em;
+    flex: 0 0 25%; }
+  .site-footer > p {
+    padding: 1em 0.5em;
+    text-align: center; }
+
+.contacts-ul-footer,
+.site-footer .site-nav-footer {
+  padding: 1rem 0; }
+
+.contacts-ul-footer .fa-map-marker-alt {
+  top: 0.5rem; }
+
+.footer-container {
+  margin: 0 auto;
+  width: 80%;
+  border-bottom: 2px solid #FFF;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  .footer-container h4 {
+    font-weight: 700;
+    font-style: italic;
+    font-size: 1.5rem;
+    letter-spacing: 1px; }
+  .footer-container li {
+    justify-content: flex-start;
+    display: flex; }
+  .footer-container span {
+    position: relative; }
+
+.footer-contacts i {
+  position: absolute;
+  top: 0;
+  left: -1.5rem;
+  margin-right: 0.8rem; }
+
+.footer-slogan,
+.icon-container {
+  padding-top: 1rem; }
+
+.icon-container {
+  display: flex; }
+  .icon-container a {
+    display: block;
+    color: #FFF;
+    margin-right: 0.7rem; }
+    .icon-container a:hover {
+      color: var(--color-hover-header-footer); }
+
+.footer-slogan p {
+  text-align: left;
+  padding-top: 0.5rem; }
+
+.site-map a {
+  color: #fff;
+  position: relative; }
+  .site-map a:hover {
+    color: var(--color-hover-header-footer); }
+  .site-map a i {
+    position: absolute;
+    top: 0;
+    left: -1.6em; }
 
 .index-about-ballet,
 .index-groups {
@@ -158,27 +262,31 @@ li {
 .index-groups-wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  width: 80%;
+  justify-content: space-around;
+  max-width: 80%;
   margin: 0 auto; }
   .index-groups-wrapper h3 {
     color: var(--color-fot-main-headers);
-    text-align: center; }
+    text-align: center;
+    font-size: 2.5rem; }
   .index-groups-wrapper div img {
     width: 100%; }
   .index-groups-wrapper p {
     text-align: center;
     color: var(--color-font-main-html);
     font-weight: 600;
-    letter-spacing: 1px; }
+    letter-spacing: 1px;
+    font-size: 1.3rem; }
 
 .group-minjons,
 .group-junior {
-  flex: 0 0 30%;
+  flex: 0 1 30%;
   display: flex;
   flex-direction: column;
-  margin: 3rem 5rem;
-  justify-content: space-around; }
+  margin: 2rem 1rem;
+  justify-content: space-around;
+  border-bottom: var(--color-site-border);
+  padding: 1rem 0; }
 
 .group-minjons > div,
 .group-junior > div {
@@ -227,7 +335,7 @@ li {
       padding: 1rem;
       border-radius: 0.5rem;
       box-shadow: var(--box-shadow-defout);
-      margin: 0 auto; }
+      margin: 2rem auto; }
   .wrapper-grid .about-grid-img-section3 {
     grid-area: landscape-photo;
     background: url("https://timedotcom.files.wordpress.com/2015/05/ballet-class.jpg") no-repeat center center;
@@ -242,7 +350,7 @@ li {
 
 .wrapper-teacher {
   display: flex;
-  margin: 3rem 5rem;
+  margin: 3rem 0rem;
   justify-content: space-around; }
   .wrapper-teacher .teacher-photo {
     flex: 0 0 30%;
@@ -357,24 +465,8 @@ li {
     cursor: pointer;
     background: var(--color-hover-header-footer); }
 
-@-webkit-keyframes slideIn {
-  from {
-    opacity: 0;
-    transform: translateY(-2rem); }
-  to {
-    opacity: 1;
-    transform: translate(0); } }
-
-@keyframes slideIn {
-  from {
-    opacity: 0;
-    transform: translateY(-2rem); }
-  to {
-    opacity: 1;
-    transform: translate(0); } }
-
 .gallery {
-  width: 80%;
+  max-width: 60rem;
   padding: 3rem;
   margin: 0 auto;
   display: block; }
@@ -391,8 +483,6 @@ li {
     position: relative;
     -webkit-animation: slideIn 0.3s ease-in;
             animation: slideIn 0.3s ease-in;
-    -webkit-animation-fill-mode: both;
-            animation-fill-mode: both;
     border-radius: 0.5rem; }
   .galery-content img {
     display: block;
@@ -569,107 +659,30 @@ li {
   -webkit-animation-delay: 1.2s;
           animation-delay: 1.2s; }
 
-.site-footer {
-  background: var(--color-header-footer);
-  border-top: var(--color-site-border);
-  padding: 1em auto;
-  color: #FFF;
-  margin: 0 auto; }
-  .site-footer .follow-us,
-  .site-footer .site-map,
-  .site-footer .footer-contacts {
-    padding: 1em 2em;
-    flex: 0 0 25%; }
-  .site-footer > p {
-    padding: 1em 0.5em;
-    text-align: center; }
-
-.contacts-ul-footer,
-.site-footer .site-nav-footer {
-  padding: 1rem 0; }
-
-.contacts-ul-footer .fa-map-marker-alt {
-  top: 0.5rem; }
-
-.footer-container {
-  margin: 0 auto;
-  width: 80%;
-  border-bottom: 2px solid #FFF;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around; }
-  .footer-container h4 {
-    font-weight: 700;
-    font-style: italic;
-    font-size: 1.5rem;
-    letter-spacing: 1px; }
-  .footer-container li {
-    justify-content: flex-start;
-    display: flex; }
-  .footer-container span {
-    position: relative; }
-
-.footer-contacts i {
-  position: absolute;
-  top: 0;
-  left: -1.5rem;
-  margin-right: 0.8rem; }
-
-.footer-slogan,
-.icon-container {
-  padding-top: 1rem; }
-
-.icon-container {
-  display: flex; }
-  .icon-container a {
-    display: block;
-    color: #FFF;
-    margin-right: 0.7rem; }
-    .icon-container a:hover {
-      color: var(--color-hover-header-footer); }
-
-.footer-slogan p {
-  text-align: left;
-  padding-top: 0.5rem; }
-
-.site-map a {
-  color: #fff;
-  position: relative; }
-  .site-map a:hover {
-    color: var(--color-hover-header-footer); }
-  .site-map a i {
-    position: absolute;
-    top: 0;
-    left: -1.6em; }
-
 .site {
   width: 100%; }
+  .site-main {
+    background: #DDD;
+    box-shadow: var(--box-shadow-inset);
+    padding: 2rem; }
 
-.site-main {
-  background: #DDD;
-  box-shadow: var(--box-shadow-inset);
-  padding: 2rem; }
-
-/* main-header */
 .main-header {
   text-align: center;
   padding: 3rem; }
-
-.main-header h2 {
-  font-size: 3rem;
-  font-weight: bold;
-  color: var(--color-fot-main-headers); }
-
-.main-header p {
-  border: var(--color-site-border);
-  max-width: 5rem;
-  margin: 1em auto; }
+  .main-header h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--color-fot-main-headers); }
+  .main-header p {
+    border: var(--color-site-border);
+    max-width: 5rem;
+    margin: 1em auto; }
 
 @media (max-width: 1024px) {
   .about-school, .about-teacher {
     width: 90%; }
   .wrapper-grid {
-    display: block; }
+    grid-template-areas: "text text text" "photo-school photo-school photo-school" "landscape-photo landscape-photo landscape-photo" "mission mission mission"; }
   .about-grid-img-section2 {
     display: flex;
     justify-content: center; }
@@ -678,10 +691,11 @@ li {
   .wrapper-teacher {
     flex-direction: column;
     margin: 3rem 0; }
-  .teacher-photo {
-    margin: 0; }
+  .wrapper-teacher .teacher-photo {
+    max-width: 50%;
+    margin: 0 auto; }
   .teacher-photo img {
-    width: 50%;
+    width: 70%;
     display: block;
     margin: 0 auto; }
   .teacher-info {
@@ -689,11 +703,9 @@ li {
     display: block;
     width: 100%; } }
 
-@media (max-width: 660px) {
-  .slogan {
-    padding: 2rem 0; }
+@media (max-width: 800px) {
   .slogan div {
-    margin: 3rem 1rem; }
+    margin: 1rem; }
   .slogan-little p {
     color: #FFF;
     text-shadow: 1.5px 1.5px 1.5px #000;
@@ -711,16 +723,16 @@ li {
     flex-direction: column;
     align-items: center;
     padding: 1rem; }
-  .nav-bar .site-nav-header ul {
-    display: flex;
-    flex-direction: column; }
-  .nav-bar li {
-    flex: 1 0 20%;
-    display: block;
-    text-align: left;
-    padding: 0.4rem 0; }
-  .site-nav-header a {
-    display: block; }
+    .nav-bar .site-nav-header ul {
+      display: flex;
+      flex-direction: column; }
+      .nav-bar .site-nav-header ul a {
+        display: block; }
+    .nav-bar li {
+      flex: 1 0 20%;
+      display: block;
+      text-align: left;
+      padding: 0.4rem 0; }
   .footer-container {
     flex-direction: column; }
   .site-footer .follow-us,
@@ -741,13 +753,16 @@ li {
   /* index */
   .index-about-ballet {
     width: 85%; }
-  .group-kids,
+  .group-minjons,
   .group-junior {
     margin: 0 auto; }
-  .index-groups-wrapper div {
-    margin-top: 1rem; }
-  .index-groups-wrapper div:not(:last-child) {
-    margin-bottom: 3rem; }
+  .index-groups-wrapper {
+    flex-direction: column;
+    margin: 1rem auto 3rem; }
+    .index-groups-wrapper div {
+      margin: 2rem auto; }
+  .teacher-photo img {
+    width: 90%; }
   /* contacts */
   .map,
   .contact-form {
@@ -758,14 +773,14 @@ li {
     padding: 3rem; }
   .map {
     padding: 0; }
-  .map img {
-    max-width: 100%; }
+    .map img {
+      max-width: 100%; }
   .contact-form .left {
     width: 100%; }
   .contact-form .right {
     width: 100%; }
-  .contact-form .right textarea {
-    margin: 2rem 0; }
+    .contact-form .right textarea {
+      margin: 2rem 0; }
   /* gallery */
   .gallery {
     width: 100%;
@@ -779,27 +794,25 @@ li {
   .news-container {
     width: 100%;
     padding: 2rem; }
-  .news-container li p {
-    margin: 4rem 0 0 0; }
-  .news-container li i {
-    top: -4rem;
-    left: 0; } }
+    .news-container li p {
+      margin: 3rem 0 0 0; }
+    .news-container li i {
+      top: -3rem;
+      left: 0; } }
 
 @media (max-width: 400px) {
   .slogan {
-    padding: 0;
-    flex-wrap: wrap; }
-  .slogan .slogan-rigth {
-    text-align: left; }
-  .slogan div {
-    margin: 1rem 1rem; }
-  .slogan div span {
-    font-size: 1.5rem; }
+    padding: 0; }
+    .slogan div span {
+      font-size: 2rem; }
   /* about */
   .about-grid-img-section2 img {
-    max-width: 100%; }
+    width: 100%; }
+  .wrapper-teacher .teacher-photo {
+    width: 70%;
+    margin: 0 auto; }
   .teacher-photo img {
-    width: 80%;
+    width: 100%;
     display: block;
     margin: 0 auto; }
   /* gallery */
@@ -824,4 +837,40 @@ li {
     border-radius: none;
     box-shadow: none; }
   .news-container li {
-    padding: 1rem; } }
+    padding: 1.5rem; }
+  .news-container li p {
+    margin: 2.5rem 0 0 0; }
+  .news-container li i {
+    top: -3rem; } }
+
+@-webkit-keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-2rem); }
+  to {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-2rem); }
+  to {
+    opacity: 1;
+    transform: translate(0); } }
+
+@-webkit-keyframes slideInDiagonal {
+  from {
+    opacity: 0;
+    transform: translate(-2rem, -2rem); }
+  to {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes slideInDiagonal {
+  from {
+    opacity: 0;
+    transform: translate(-2rem, -2rem); }
+  to {
+    opacity: 1;
+    transform: translate(0); } }
