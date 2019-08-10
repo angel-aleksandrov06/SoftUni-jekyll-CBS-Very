@@ -120,7 +120,9 @@ li {
   display: flex;
   padding: 2rem 0;
   -webkit-animation: slideInDiagonal 0.3s ease-in;
-          animation: slideInDiagonal 0.3s ease-in; }
+          animation: slideInDiagonal 0.3s ease-in;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both; }
   .slogan div {
     flex: 0 1 45%;
     margin: 1rem; }
@@ -152,9 +154,10 @@ li {
       font-size: 2rem;
       text-align: center; }
 
+.slogan,
 .slogan-little {
-  -webkit-animation-delay: 0.1s;
-          animation-delay: 0.1s; }
+  -webkit-animation-delay: 0.1;
+          animation-delay: 0.1; }
 
 .nav-bar li:nth-child(1) {
   -webkit-animation-delay: 0.2s;
@@ -704,6 +707,9 @@ li {
     width: 100%; } }
 
 @media (max-width: 800px) {
+  .slogan {
+    -webkit-animation-delay: 0.8s;
+            animation-delay: 0.8s; }
   .slogan div {
     margin: 1rem; }
   .slogan-little p {
@@ -713,6 +719,9 @@ li {
     font-size: 2rem;
     flex: 0 0 100%;
     margin-bottom: 0.5rem; }
+  .slogan-little {
+    -webkit-animation-delay: 0.8s;
+            animation-delay: 0.8s; }
   .site-header {
     background-position: center; }
   .nav-bar .site-title {

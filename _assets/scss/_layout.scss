@@ -75,6 +75,8 @@
 
 @include bp (tablet) {
     
+    .slogan { animation-delay: 0.8s; }
+
     .slogan div {
         margin: 1rem;
     }
@@ -87,6 +89,8 @@
         flex: 0 0 100%;
         margin-bottom: 0.5rem;
     }
+
+    .slogan-little { animation-delay: 0.8s; }
     
     .site-header {
         background-position: center ;
