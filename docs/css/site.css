@@ -209,7 +209,8 @@ li {
     letter-spacing: 1px; }
   .footer-container li {
     justify-content: flex-start;
-    display: flex; }
+    display: flex;
+    margin-top: 0.3rem; }
   .footer-container span {
     position: relative; }
 
@@ -473,13 +474,15 @@ li {
     color: var(--color-fot-main-headers);
     text-align: center;
     font-weight: bold; }
+  .map a {
+    display: block;
+    margin: 3rem auto; }
   .map img {
     display: block;
     max-width: 40rem;
     border: var(--color-site-border);
     padding: 1rem;
     border-radius: 0.5rem;
-    margin: 3rem auto;
     box-shadow: var(--box-shadow-defout); }
 
 .contact-form {
@@ -525,6 +528,10 @@ li {
   .contact-form .right textarea {
     margin: 0 auto;
     min-height: 14rem; }
+  .contact-form input:focus,
+  .contact-form textarea:focus,
+  .contact-form button:focus {
+    outline: none; }
 
 .button {
   flex: 0 0 100%;

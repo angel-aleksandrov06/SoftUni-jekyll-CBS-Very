@@ -41,13 +41,18 @@
         font-weight: bold;
     }
 
+    & a {
+        display: block;
+        margin: 3rem auto;
+    }
+
     & img {
         display: block;
         max-width: 40rem;
         border: var(--color-site-border);
         padding: 1rem;
         border-radius: 0.5rem;
-        margin: 3rem auto;
+        
         box-shadow: var(--box-shadow-defout);
     }
 }
@@ -110,6 +115,12 @@
     & .right textarea {
         margin: 0 auto;
         min-height: 14rem;
+    }
+
+    input:focus,
+    textarea:focus,
+    button:focus {
+        outline: none;
     }
 }
 
