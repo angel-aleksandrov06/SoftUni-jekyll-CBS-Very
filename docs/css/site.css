@@ -442,6 +442,8 @@ li {
       box-shadow: var(--box-shadow-defout); }
   .wrapper-teacher .teacher-info {
     flex: 1 1 60%; }
+    .wrapper-teacher .teacher-info p {
+      margin-bottom: 0.5rem; }
 
 .contacts-container {
   width: 90%;

@@ -90,6 +90,10 @@
 
     & .teacher-info {
         flex: 1 1 60%;
+
+        & p {
+            margin-bottom: 0.5rem;
+        }
     }
 }
 
