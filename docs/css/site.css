@@ -323,6 +323,9 @@ li {
     flex: 0 0 45%;
     display: flex;
     flex-direction: column; }
+    @media (max-width: 800px) {
+      .types-of-groups li {
+        margin: 2rem auto; } }
     .types-of-groups li h3 {
       color: var(--color-fot-main-headers);
       text-align: center;
