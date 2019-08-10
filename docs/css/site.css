@@ -95,11 +95,24 @@ li {
             animation: slideInDiagonal 0.3s ease-in;
     -webkit-animation-fill-mode: both;
             animation-fill-mode: both; }
+    .nav-bar li:nth-child(2) {
+      -webkit-animation-delay: 0.2s;
+              animation-delay: 0.2s; }
+    .nav-bar li:nth-child(3) {
+      -webkit-animation-delay: 0.3s;
+              animation-delay: 0.3s; }
+    .nav-bar li:nth-child(4) {
+      -webkit-animation-delay: 0.4s;
+              animation-delay: 0.4s; }
+    .nav-bar li:nth-child(5) {
+      -webkit-animation-delay: 0.5s;
+              animation-delay: 0.5s; }
   .nav-bar a {
     display: flex;
     align-items: center;
     padding: 0 0.3rem;
-    position: relative; }
+    position: relative;
+    transition: color 0.3s ease-in; }
   .nav-bar a:hover {
     color: var(--color-hover-header-footer); }
   .nav-bar a i {
@@ -159,22 +172,6 @@ li {
   -webkit-animation-delay: 0.1;
           animation-delay: 0.1; }
 
-.nav-bar li:nth-child(1) {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s; }
-
-.nav-bar li:nth-child(2) {
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s; }
-
-.nav-bar li:nth-child(3) {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s; }
-
-.nav-bar li:nth-child(4) {
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s; }
-
 .site-footer {
   background: var(--color-header-footer);
   border-top: var(--color-site-border);
@@ -230,7 +227,8 @@ li {
   .icon-container a {
     display: block;
     color: #FFF;
-    margin-right: 0.7rem; }
+    margin-right: 0.7rem;
+    transition: color 0.3s ease-in; }
     .icon-container a:hover {
       color: var(--color-hover-header-footer); }
 
@@ -240,7 +238,8 @@ li {
 
 .site-map a {
   color: #fff;
-  position: relative; }
+  position: relative;
+  transition: color 0.3s ease-in; }
   .site-map a:hover {
     color: var(--color-hover-header-footer); }
   .site-map a i {
@@ -328,8 +327,6 @@ li {
     grid-area: text; }
   .wrapper-grid .about-grid-img-section2 {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     grid-area: photo-school; }
     .wrapper-grid .about-grid-img-section2 img {
       max-width: 25rem;
@@ -338,7 +335,8 @@ li {
       padding: 1rem;
       border-radius: 0.5rem;
       box-shadow: var(--box-shadow-defout);
-      margin: 2rem auto; }
+      margin: auto;
+      margin-left: auto; }
   .wrapper-grid .about-grid-img-section3 {
     grid-area: landscape-photo;
     background: url("https://timedotcom.files.wordpress.com/2015/05/ballet-class.jpg") no-repeat center center;
@@ -346,6 +344,7 @@ li {
     min-height: 15rem;
     border: var(--color-site-border);
     padding: 1rem;
+    margin-top: 1rem;
     border-radius: 0.5rem;
     box-shadow: var(--box-shadow-defout); }
   .wrapper-grid .about-grid-text-section4 {
@@ -463,7 +462,8 @@ li {
   font-weight: bold;
   padding: 0.8rem;
   margin-top: 2rem;
-  background: #DDD; }
+  background: #DDD;
+  transition: background 0.3s ease-in; }
   .button:hover {
     cursor: pointer;
     background: var(--color-hover-header-footer); }
@@ -486,55 +486,64 @@ li {
     position: relative;
     -webkit-animation: slideIn 0.3s ease-in;
             animation: slideIn 0.3s ease-in;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
     border-radius: 0.5rem; }
+    .galery-content li:nth-child(1) {
+      -webkit-animation-delay: 0.1s;
+              animation-delay: 0.1s; }
+    .galery-content li:nth-child(2) {
+      -webkit-animation-delay: 0.2s;
+              animation-delay: 0.2s; }
+    .galery-content li:nth-child(3) {
+      -webkit-animation-delay: 0.3s;
+              animation-delay: 0.3s; }
+    .galery-content li:nth-child(4) {
+      -webkit-animation-delay: 0.4s;
+              animation-delay: 0.4s; }
+    .galery-content li:nth-child(5) {
+      -webkit-animation-delay: 0.5s;
+              animation-delay: 0.5s; }
+    .galery-content li:nth-child(6) {
+      -webkit-animation-delay: 0.6s;
+              animation-delay: 0.6s; }
+    .galery-content li:nth-child(7) {
+      -webkit-animation-delay: 0.7s;
+              animation-delay: 0.7s; }
+    .galery-content li:nth-child(8) {
+      -webkit-animation-delay: 0.8s;
+              animation-delay: 0.8s; }
+    .galery-content li:nth-child(9) {
+      -webkit-animation-delay: 0.9s;
+              animation-delay: 0.9s; }
+    .galery-content li:nth-child(10) {
+      -webkit-animation-delay: 1s;
+              animation-delay: 1s; }
+    .galery-content li:nth-child(11) {
+      -webkit-animation-delay: 1.1s;
+              animation-delay: 1.1s; }
+    .galery-content li:nth-child(12) {
+      -webkit-animation-delay: 1.2s;
+              animation-delay: 1.2s; }
+    .galery-content li:nth-child(13) {
+      -webkit-animation-delay: 1.3s;
+              animation-delay: 1.3s; }
+    .galery-content li:nth-child(14) {
+      -webkit-animation-delay: 1.4s;
+              animation-delay: 1.4s; }
+    .galery-content li:nth-child(15) {
+      -webkit-animation-delay: 1.5s;
+              animation-delay: 1.5s; }
+    .galery-content li:nth-child(16) {
+      -webkit-animation-delay: 1.6s;
+              animation-delay: 1.6s; }
+    .galery-content li:nth-child(17) {
+      -webkit-animation-delay: 1.7s;
+              animation-delay: 1.7s; }
   .galery-content img {
     display: block;
     width: 100%;
     height: auto; }
-
-.galery-content li:nth-child(2) {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s; }
-
-.galery-content li:nth-child(3) {
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s; }
-
-.galery-content li:nth-child(4) {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s; }
-
-.galery-content li:nth-child(5) {
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s; }
-
-.galery-content li:nth-child(6) {
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s; }
-
-.galery-content li:nth-child(7) {
-  -webkit-animation-delay: 0.7s;
-          animation-delay: 0.7s; }
-
-.galery-content li:nth-child(8) {
-  -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s; }
-
-.galery-content li:nth-child(9) {
-  -webkit-animation-delay: 0.9s;
-          animation-delay: 0.9s; }
-
-.galery-content li:nth-child(10) {
-  -webkit-animation-delay: 1.0s;
-          animation-delay: 1.0s; }
-
-.galery-content li:nth-child(11) {
-  -webkit-animation-delay: 1.1s;
-          animation-delay: 1.1s; }
-
-.galery-content li:nth-child(12) {
-  -webkit-animation-delay: 1.2s;
-          animation-delay: 1.2s; }
 
 .galery-content li::before {
   display: block;
@@ -605,6 +614,18 @@ li {
             animation: slideIn 0.3s ease-in;
     -webkit-animation-fill-mode: both;
             animation-fill-mode: both; }
+    .news-container li:nth-child(2) {
+      -webkit-animation-delay: 0.2s;
+              animation-delay: 0.2s; }
+    .news-container li:nth-child(3) {
+      -webkit-animation-delay: 0.3s;
+              animation-delay: 0.3s; }
+    .news-container li:nth-child(4) {
+      -webkit-animation-delay: 0.4s;
+              animation-delay: 0.4s; }
+    .news-container li:nth-child(5) {
+      -webkit-animation-delay: 0.5s;
+              animation-delay: 0.5s; }
     .news-container li p {
       margin-left: 3rem;
       color: #FFF;
@@ -617,50 +638,6 @@ li {
       top: 0;
       left: -4rem;
       font-size: 2rem; }
-
-.news-container li:nth-child(2) {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s; }
-
-.news-container li:nth-child(3) {
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s; }
-
-.news-container li:nth-child(4) {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s; }
-
-.news-container li:nth-child(5) {
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s; }
-
-.news-container li:nth-child(6) {
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s; }
-
-.news-container li:nth-child(7) {
-  -webkit-animation-delay: 0.7s;
-          animation-delay: 0.7s; }
-
-.news-container li:nth-child(8) {
-  -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s; }
-
-.news-container li:nth-child(9) {
-  -webkit-animation-delay: 0.9s;
-          animation-delay: 0.9s; }
-
-.news-container li:nth-child(10) {
-  -webkit-animation-delay: 1.0s;
-          animation-delay: 1.0s; }
-
-.news-container li:nth-child(11) {
-  -webkit-animation-delay: 1.1s;
-          animation-delay: 1.1s; }
-
-.news-container li:nth-child(12) {
-  -webkit-animation-delay: 1.2s;
-          animation-delay: 1.2s; }
 
 .site {
   width: 100%; }
@@ -690,7 +667,8 @@ li {
     display: flex;
     justify-content: center; }
   .about-grid-img-section2 img {
-    margin: 2rem auto; }
+    margin: 2rem auto;
+    margin-left: auto; }
   .wrapper-teacher {
     flex-direction: column;
     margin: 3rem 0; }

@@ -126,6 +126,7 @@
     padding: 0.8rem;
     margin-top: 2rem;
     background: #DDD;
+    transition: background 0.3s ease-in;
 
     &:hover {
         cursor: pointer;
