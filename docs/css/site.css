@@ -135,7 +135,8 @@ li {
   -webkit-animation: slideInDiagonal 0.3s ease-in;
           animation: slideInDiagonal 0.3s ease-in;
   -webkit-animation-fill-mode: both;
-          animation-fill-mode: both; }
+          animation-fill-mode: both;
+  justify-content: space-evenly; }
   .slogan div {
     flex: 0 1 45%;
     margin: 1rem; }
@@ -335,7 +336,6 @@ li {
       padding: 1rem;
       border-radius: 0.5rem;
       box-shadow: var(--box-shadow-defout);
-      margin: auto;
       margin-left: auto; }
   .wrapper-grid .about-grid-img-section3 {
     grid-area: landscape-photo;
