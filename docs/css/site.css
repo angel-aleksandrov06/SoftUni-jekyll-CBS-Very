@@ -263,46 +263,6 @@ li {
     font-weight: 600;
     letter-spacing: 1px; }
 
-.index-groups-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  max-width: 80%;
-  margin: 0 auto; }
-  .index-groups-wrapper h3 {
-    color: var(--color-fot-main-headers);
-    text-align: center;
-    font-size: 2.5rem; }
-  .index-groups-wrapper div img {
-    width: 100%; }
-  .index-groups-wrapper p {
-    text-align: center;
-    color: var(--color-font-main-html);
-    font-weight: 600;
-    letter-spacing: 1px;
-    font-size: 1.3rem; }
-
-.group-minjons,
-.group-junior {
-  flex: 0 1 30%;
-  display: flex;
-  flex-direction: column;
-  margin: 2rem 1rem;
-  justify-content: space-around;
-  border-bottom: var(--color-site-border);
-  padding: 1rem 0; }
-
-.group-minjons > div,
-.group-junior > div {
-  width: 200px;
-  height: auto;
-  margin: 1rem auto;
-  display: flex;
-  padding: 1rem;
-  border: var(--color-site-border);
-  border-radius: 0.5rem;
-  box-shadow: var(--box-shadow-defout); }
-
 .types-of-groups {
   max-width: 60rem;
   display: flex;
@@ -378,6 +338,13 @@ li {
   .types-of-groups strong {
     opacity: 0;
     display: none; }
+  .types-of-groups p {
+    text-align: center;
+    color: var(--color-font-main-html);
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+    margin: 2rem auto; }
 
 .about-school,
 .about-teacher {
@@ -825,16 +792,10 @@ li {
   /* index */
   .index-about-ballet {
     width: 85%; }
-  .group-minjons,
-  .group-junior {
-    margin: 0 auto; }
-  .index-groups-wrapper {
-    flex-direction: column;
-    margin: 1rem auto 3rem; }
-    .index-groups-wrapper div {
-      margin: 2rem auto; }
   .types-of-groups li h3 {
     font-size: 3rem; }
+  .types-of-groups p {
+    font-size: 1.5rem; }
   .types-of-groups div > a:hover strong {
     font-size: 1.8rem; }
   .teacher-photo img {

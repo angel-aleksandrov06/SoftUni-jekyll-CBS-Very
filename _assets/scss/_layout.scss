@@ -160,22 +160,12 @@
         width: 85%;
     }
     
-    .group-minjons,
-    .group-junior {
-        margin: 0 auto;
-    }
-
-    .index-groups-wrapper {
-        flex-direction: column;
-        margin: 1rem auto 3rem;
-
-        & div {
-            margin: 2rem auto;
-        }
-    }
-
     .types-of-groups li h3 {
         font-size: 3rem;
+    }
+
+    .types-of-groups p {
+        font-size: 1.5rem;
     }
 
     .types-of-groups div > a:hover strong {
