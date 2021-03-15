@@ -358,7 +358,10 @@ li {
 .wrapper-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 2fr;
-  grid-template-areas: "text text photo-school" "text text photo-school" "landscape-photo landscape-photo landscape-photo" "mission mission mission";
+  grid-template-areas: "text text photo-school"
+ "text text photo-school"
+ "landscape-photo landscape-photo landscape-photo"
+ "mission mission mission";
   grid-gap: 1rem;
   padding: 3rem 0; }
   .wrapper-grid h3 {
@@ -383,7 +386,7 @@ li {
       margin-left: auto; }
   .wrapper-grid .about-grid-img-section3 {
     grid-area: landscape-photo;
-    background: url("https://timedotcom.files.wordpress.com/2015/05/ballet-class.jpg") no-repeat center center;
+    background: url("https://process.filepicker.io/APHE465sSbqvbOIStdwTyz/rotate=deg:exif/resize=fit:crop,height:283,width:472/output=quality:80,compress:true,strip:true,format:jpg/cache=expiry:max/https://cdn.filestackcontent.com/ypoTLsEAQlWCXsu6yINR") no-repeat center center;
     background-size: cover;
     min-height: 15rem;
     border: var(--color-site-border);
@@ -714,7 +717,10 @@ li {
   .about-school, .about-teacher {
     width: 90%; }
   .wrapper-grid {
-    grid-template-areas: "text text text" "photo-school photo-school photo-school" "landscape-photo landscape-photo landscape-photo" "mission mission mission"; }
+    grid-template-areas: "text text text"
+ "photo-school photo-school photo-school"
+ "landscape-photo landscape-photo landscape-photo"
+ "mission mission mission"; }
   .about-grid-img-section2 {
     display: flex;
     justify-content: center; }
